@@ -2,5 +2,3 @@
 FROM node:lts-alpine
 
 WORKDIR /opt/app
-
-CMD ["yarn dev"]
