@@ -1,7 +1,20 @@
 import type { NextPage } from 'next';
 
+import { TodoHeader, TodoInput, TodoList } from 'components/Todo';
+
 const Home: NextPage = () => {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  const todos = [
+    { id: 1, title: 'todo1', status: true },
+    { id: 2, title: 'todo2', status: false },
+  ];
+
+  return (
+    <>
+      <TodoHeader />
+      <TodoInput />
+      <TodoList todos={todos} />
+    </>
+  );
 };
 
 export default Home;
