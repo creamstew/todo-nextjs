@@ -14,10 +14,11 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "tailwindcss", "@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "next",
+    "plugin:tailwindcss/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
